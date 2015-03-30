@@ -6,7 +6,7 @@ TRUNCATE TABLE albums;
 
 INSERT INTO albums (artist, name, release_date, sales, genre)
 			VALUES ('Michael Jackson', 'Thriller', 1982, 42.4, 'Pop, rock, R&B'),
-				   ('Pink Flyd', 'The Dark Side of the Moon', 1973, 22.7, 'Progressive rock'),
+				   ('Pink Floyd', 'The Dark Side of the Moon', 1973, 22.7, 'Progressive rock'),
 				   ('Whitney Houston', 'The Bodyguard', 1992, 27.4, 'R&B, soul, pop'),
 				   ('Meat Loaf', 'Bat Out of Hell', 1992, 20.6, 'Hard rock, progressive rock'),
 				   ('Eagles', 'Their Greatest Hits (1971-1975)', 1976, 32.2, 'Rock, soft rock, folk rock'),
@@ -37,3 +37,6 @@ INSERT INTO albums (artist, name, release_date, sales, genre)
 				   ('Pink Floyd', 'The Wall', 1979, 17.6, 'Progressive rock'),
 				   ('Santana', 'Supernatural', 1999, 20.5, 'Rock'),
 				   ('Guns N\' Roses', 'Appetite for Destruction', 1987, 21.3, 'Heavy metal/hard rock');
+
+-- Output a message to Command Line when migration succeeds:
+SELECT 'Successful!' AS 'Seeder Migration';

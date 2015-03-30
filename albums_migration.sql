@@ -14,3 +14,6 @@ CREATE TABLE albums (
     genre VARCHAR(256) DEFAULT 'NONE',
     PRIMARY KEY (id) 
 );
+
+-- Output a message to Command Line when migration succeeds:
+SELECT 'Successful!' AS 'Albums Table Migration';
