@@ -13,3 +13,9 @@ SELECT *, DATEDIFF(CURDATE(), hire_date) AS 'Days with the Company' FROM employe
 AND `birth_date` LIKE '%-12-25'
 ORDER BY birth_date ASC, hire_date DESC;
 
+-- Unique combinations of first and last names where the last name contains 'q' but not 'qu', including a column that shows how many other people shared that exact full name 
+SELECT *, count(*) AS 'Times This Name Occurs' FROM employees WHERE last_name LIKE '%q%'
+AND last_name NOT LIKE '%qu%'
+GROUP BY first_name, last_name
+ORDER BY count(*) DESC;
+
