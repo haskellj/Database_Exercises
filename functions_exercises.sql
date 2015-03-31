@@ -8,8 +8,8 @@ ORDER BY last_name, first_name;
 
 
 
--- Employees hired in the 90s and born on Christmas organized by the oldest employees who were most recently hired 
-SELECT * FROM employees WHERE `hire_date` LIKE '199%' 
+-- Employees hired in the 90s and born on Christmas organized by the oldest employees who were most recently hired. Show additional column representing how many days they've been employed as of today's date 
+SELECT *, DATEDIFF(CURDATE(), hire_date) AS 'Days with the Company' FROM employees WHERE `hire_date` LIKE '199%' 
 AND `birth_date` LIKE '%-12-25'
 ORDER BY birth_date ASC, hire_date DESC;
 
