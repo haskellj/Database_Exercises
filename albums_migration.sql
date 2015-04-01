@@ -12,7 +12,8 @@ CREATE TABLE albums (
     release_date INT(4) NOT NULL,
     sales DECIMAL(4,1) NOT NULL,
     genre VARCHAR(256) DEFAULT 'NONE',
-    PRIMARY KEY (id) 
+    PRIMARY KEY (id), 
+    UNIQUE KEY "artist" ("artist","name")	-- avoids duplicate entries of artist-album name combinations
 );
 
 -- Output a message to Command Line when migration succeeds:

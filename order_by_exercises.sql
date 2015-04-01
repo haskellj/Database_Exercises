@@ -1,3 +1,5 @@
+-- USE employees;
+
 -- Male employees with a first name of 'Irena', 'Vidya', OR 'Maya' ordered by f.name 
 SELECT * FROM employees WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 AND gender = 'M'

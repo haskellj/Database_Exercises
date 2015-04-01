@@ -1,3 +1,5 @@
+-- USE employees;
+
 -- Counts of all male and female employees with a first name of 'Irena', 'Vidya', OR 'Maya'
 SELECT COUNT(*), gender FROM employees WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 GROUP BY gender;

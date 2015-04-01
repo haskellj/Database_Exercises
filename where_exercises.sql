@@ -1,3 +1,5 @@
+-- USE employees;
+
 -- 2 ways to list employees with a first name of 'Irena', 'Vidya', OR 'Maya' 
 SELECT * FROM employees WHERE `first_name` IN ('Irena', 'Vidya', 'Maya');
 SELECT * FROM employees WHERE `first_name` = 'Irena' 

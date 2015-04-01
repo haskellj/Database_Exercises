@@ -1,3 +1,5 @@
+-- USE employees;
+
 -- UNIQUE titles ordered alphabetically
 SELECT DISTINCT title FROM titles
 ORDER BY title;
